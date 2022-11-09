@@ -29,8 +29,11 @@ To improve the analysis, the developer could use the following codes to add addi
 # Get average precipitation data for June
 
 june_temp_prec = session.query(Measurement.tobs, Measurement.prcp).filter(extract('month', Measurement.date) == 6).all()
+
 june_temp_prec = session.query(Measurement.tobs, Measurement.prcp).filter(extract('month', Measurement.date) == 6).all()
+
 june_temp_prec_df = pd.DataFrame(june_temp_prec)
+
 june_temp_prec_df.describe()
 
 ![June with Precip](https://user-images.githubusercontent.com/112994018/200960516-144cc3d1-2a64-4238-b0db-77d4f1b53fe6.png)
@@ -38,8 +41,11 @@ june_temp_prec_df.describe()
 # Get average precipitation data for December 
 
 dec_temp = session.query(Measurement.date, Measurement.tobs, Measurement.prcp).filter(extract('month', Measurement.date) == 12).all()
+
 dec_temp_prec = session.query(Measurement.tobs, Measurement.prcp).filter(extract('month', Measurement.date) == 12).all()
+
 dec_temp_prec_df = pd.DataFrame(dec_temp_prec)
+
 dec_temp_prec_df.describe()
 
 ![December Temps](https://user-images.githubusercontent.com/112994018/200960546-83f34384-855b-410e-900a-0655e82b3c70.png)
