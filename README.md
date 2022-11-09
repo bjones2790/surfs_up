@@ -11,10 +11,12 @@ Results of the analysis revealed the following:
 1. Average temperatures were slightly higher in June as expected as seen in the tables below. June had an average high of 74.9 degrees while December had an average high of 71 degrees. 
 
 June Temps: 
-/Users/bruce0841/Desktop/UNCC/SQL/Module_9/surfs_up/Resources/June temps.png
+![June temps](https://user-images.githubusercontent.com/112994018/200960404-e6b879c2-9a8b-4e1b-b89a-93b2e7efacdd.png)
+
 
 December Temps
-/Users/bruce0841/Desktop/UNCC/SQL/Module_9/surfs_up/Resources/December Temps.png
+![December Temps](https://user-images.githubusercontent.com/112994018/200960424-675a314f-0859-49c0-9b88-8f01f4d6debe.png)
+
 
 2. Although temperatures in June were higher, the two months have a comparable standard deviation between the two, meaning there is similar variation between the mean and temperature values within each dataset.
 
