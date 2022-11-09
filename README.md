@@ -10,12 +10,10 @@ Results of the analysis revealed the following:
 
 1. Average temperatures were slightly higher in June as expected as seen in the tables below. June had an average high of 74.9 degrees while December had an average high of 71 degrees. 
 
-June Temps: 
-![June temps](https://user-images.githubusercontent.com/112994018/200960404-e6b879c2-9a8b-4e1b-b89a-93b2e7efacdd.png)
+June Temps:![June temps](https://user-images.githubusercontent.com/112994018/200960404-e6b879c2-9a8b-4e1b-b89a-93b2e7efacdd.png)
 
 
-December Temps
-![December Temps](https://user-images.githubusercontent.com/112994018/200960424-675a314f-0859-49c0-9b88-8f01f4d6debe.png)
+December Temps: ![December Temps](https://user-images.githubusercontent.com/112994018/200960424-675a314f-0859-49c0-9b88-8f01f4d6debe.png)
 
 
 2. Although temperatures in June were higher, the two months have a comparable standard deviation between the two, meaning there is similar variation between the mean and temperature values within each dataset.
@@ -38,14 +36,14 @@ june_temp_prec_df = pd.DataFrame(june_temp_prec)
 
 june_temp_prec_df.describe()
 
-/Users/bruce0841/Desktop/UNCC/SQL/Module_9/surfs_up/Resources/June with Precip.png
+![June with Precip](https://user-images.githubusercontent.com/112994018/200960516-144cc3d1-2a64-4238-b0db-77d4f1b53fe6.png)
 
 # Get average precipitation data for December 
 
 dec_temp = session.query(Measurement.date, Measurement.tobs, Measurement.prcp).filter(extract('month', Measurement.date) == 12).all()
 
+![December Temps](https://user-images.githubusercontent.com/112994018/200960546-83f34384-855b-410e-900a-0655e82b3c70.png)
 
-/Users/bruce0841/Desktop/UNCC/SQL/Module_9/surfs_up/Resources/Dec with precip.png
 
 
  
